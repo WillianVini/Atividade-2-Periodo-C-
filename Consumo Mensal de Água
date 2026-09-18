@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(){
+    
+    float consumo;
+    float soma = 0;
+    int contador = 1;
+    float media;
+    
+    while (contador <= 5){
+        printf("Digite o consumo do morador %d:", contador);
+        scanf("%f", &consumo);
+        
+        if(consumo <= 20){
+            printf("O consumo está dentro da média.\n");
+        }
+        else{
+            printf("O consumo está acima da média.\n");
+        }
+        
+        soma = soma + consumo;
+        contador++;
+    }
+    
+    media = soma / 5;
+    
+    printf("A media é: %f.\n", media);
+    
+    return 0;
+    
+    
+}
