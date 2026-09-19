@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    
+    float nota;
+    int contador;
+    float soma = 0;
+    float media;
+    
+    for (contador = 1; contador <= 10; contador++){
+        
+        printf("Avalie a nota do atendimento %d:", contador);
+        scanf("%f", &nota);
+        
+        soma = soma + nota;
+    }
+    
+    media = soma / 10;
+    printf("A media do atendimento é %f.\n", media);
+    
+    if (media < 7){
+        
+        printf("O atendimento está abaixo da media.\n");
+    }
+    
+    return 0;
+    
+}
